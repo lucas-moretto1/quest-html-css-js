@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+    background-image: url(../images/bg-repeat.jpg);
+    background-repeat: repeat-x;
+    background-size: 60px;
+    font-family: 'Roboto', sans-serif;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-height: 100vh;
+}
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container .conteudo {
+    max-width: 300px;
+    height: 111px;
+    color: #fff;
+    margin-right: 60px;
+}
+
+.container .formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-width: 340px;
+    height: 378px;
+    padding: 30px;
+    background-color: #fff;
+    position: relative;
+}
+
+.container .conteudo .title {
+    font-weight: 900;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-bottom: 11px;
+}
+
+.container .conteudo .texto {
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.container .formulario .itens .item .input-form {
+    width: 298px;
+    height: 35px;
+    border-radius: 10px;
+    padding: 15px;
+    margin-bottom: 12px;
+}
+
+.container .formulario .itens .item .input-form.mensagem{
+    height: 100px;
+    margin-bottom: 0;
+    font-family: 'Roboto', sans-serif;    
+}
+
+.container .formulario span {
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-top: 5px;
+}
+
+.container .formulario .btn-enviar {
+    background-color: #3CCC87;
+    width: 298px;
+    height: 42px;
+    border-radius: 10px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.5rem;
+    font-family: 'Roboto', sans-serif;
+    transition: 0.3s ease-in;
+}
+
+.container .formulario .btn-enviar:hover{
+    transform: scale(1.02);
+}
+
+.obrigatorio.mensagem{
+    margin-top: -1px;
+}
+
+.obrigatorio {
+    display: none;
+}
+
+/* ESTILIZAR INPUTS */
+
+.preenchido {
+    border: 1px solid #00C22B;
+}
+
+.nao-preenchido {
+    border: 1px solid red;
+}
+
+.obrigatorio-visivel {
+    display: block;
+    position: absolute;
+    font-size: 0.8rem;
+    margin: -12px 0 0 5px;
+    color: red;
+}

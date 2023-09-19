@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-weight: 300;
+}
+
+.btn-enviar {
+    border: none;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+}
+
+input, textarea {
+    border: 1px solid #000;
+}

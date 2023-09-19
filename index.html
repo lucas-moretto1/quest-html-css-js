@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício DevQuest - Formulário</title>
+
+    <link rel="stylesheet" href="src/css/reset.css">
+    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="stylesheet" href="src/css/responsive.css">
+</head>
+<body>
+    <main>
+        <section class="container">
+            <div class="conteudo">
+                <h1 class="title">ficou com dúvida? <br> Nos mande uma mensagem!</h1>
+
+                <p class="texto">caso tenha ficado com qualquer dúvida basta nos mandar uma mensagem e entraremos em contato em menos de 24h.</p>
+            </div>
+
+            <div class="formulario">
+                <form>
+                <ul class="itens">
+                    <li class="item"><input type="text" name="nome" id="nomeUsuario" placeholder="Nome completo *" required class="input-form">
+                        <p class="obrigatorio">campo obrigatório</p></li>
+                        
+
+                    <li class="item"><input type="text" name="email" id="emailUsuario" placeholder="Email *" required class="input-form">
+                        <p class="obrigatorio">campo obrigatório</p></li>
+
+                    <li class="item">
+                        <input type="number" name="telefone" id="telefone" placeholder="Telefone *" required class="input-form">
+                        <p class="obrigatorio">campo obrigatório</p></li>
+
+                    <li class="item">
+                        <textarea name="mensagem" id="mensagem" placeholder="Mensagem *" rows="10" class="input-form mensagem"></textarea>
+                        
+                        <p class="obrigatorio mensagem">campo obrigatório</p></li>
+                </ul>
+                </form>
+
+                <span>* campos obrigatórios</span>
+                
+                <br>
+                    <input type="submit" class="btn-enviar"></input>
+                
+                
+            </div>
+        </section>
+    </main>
+
+    <script type="text/javascript" src="src/js/verificacao.js"></script>
+</body>
+</html>
